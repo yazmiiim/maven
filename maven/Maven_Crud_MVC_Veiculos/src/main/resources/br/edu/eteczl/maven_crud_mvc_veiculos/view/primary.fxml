@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.eteczl.maven_crud_mvc_veiculos.controller.PrimaryController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btn_Novo" mnemonicParsing="false" onAction="#btn_Novo_Action" text="Novo" />
+            <Button fx:id="btn_Editar" mnemonicParsing="false" onAction="#btn_Editar_Action" text="Editar" />
+            <Button fx:id="btn_Apagar" mnemonicParsing="false" onAction="#btn_Apagar_Action" text="Apagar" />
+        </items>
+      </ToolBar>
+      <BorderPane prefHeight="401.0" prefWidth="619.0">
+         <center>
+            <ListView fx:id="lst_Veiculos" prefHeight="374.0" prefWidth="619.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
